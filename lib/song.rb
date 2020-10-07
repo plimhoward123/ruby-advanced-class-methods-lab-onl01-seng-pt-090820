@@ -15,9 +15,9 @@ class Song
     @@all << song
   end
   def self.new_by_name(name)
-    song = self.new
-    song.name = name
-    return song.name
+    s = self.new
+    s.name = name
+    @@all << s
   end
 
   def self.find_by_name(name)

@@ -11,7 +11,7 @@ class Song
   end
 
   def self.create
-    
+
   end
 
   def self.destroy_all

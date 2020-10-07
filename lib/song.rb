@@ -17,7 +17,7 @@ class Song
   def self.new_by_name(name)
     song = self.new
     song.name = name
-    @@all << song
+    return song.name
   end
 
   def self.find_by_name(name)

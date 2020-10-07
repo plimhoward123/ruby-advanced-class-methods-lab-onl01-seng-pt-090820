@@ -20,6 +20,7 @@ class Song
     s = self.new
     s.name = n
     @@all << s
+    return s
   end
 
   def self.destroy_all

@@ -13,6 +13,7 @@ class Song
   def self.create
     @name = name
     @artist_name = artist_name
+    @@all << self
   end
 
   def self.find_by_name(name)

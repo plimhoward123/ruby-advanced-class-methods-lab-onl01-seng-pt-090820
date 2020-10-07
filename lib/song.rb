@@ -22,7 +22,12 @@ class Song
     @@all << s
     return s
   end
-
+  def create_by_name(n)
+    s = self.new
+    s.name = n
+    @@all << s
+    save
+  end
   def self.destroy_all
     @@all = []
     return @@all

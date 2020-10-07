@@ -10,4 +10,12 @@ class Song
     self.class.all << self
   end
 
+  def self.create
+    
+  end
+
+  def self.destroy_all
+    @@all = []
+    return @@all
+  end
 end
